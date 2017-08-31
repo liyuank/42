@@ -1,0 +1,51 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh17940\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #include <stdio.h>\
+\
+unsigned char swap_bits(unsigned char octet)\
+\{\
+  return (((octet & 0xF0) >> 4) | ((octet & 0x0F) << 4));\
+\}\
+\
+unsigned char right_shift_bits(unsigned char octet)\
+\{\
+  return (octet >> 4);\
+\}\
+\
+int main(void)\
+\{\
+  \
+  printf("%d\\n", swap_bits(65));\
+  //printf("%d\\n", right_shift_bits(15));\
+  return (0);\
+\}\
+\
+\
+// unsigned char swap_bits(unsigned char octet)\
+// \{\
+//   return ((octet >> 4 & 0x0F) || (0xF0 & octet >> 4)));\
+// \}\
+\
+\
+\
+\
+//0110 0100\
+//0100 0110\
+\
+\
+//0x0F =====> 0000 1111\
+//0xF0 =====> 1111 0000\
+\
+//0110 0100 shift to the right by 4 : 0110\
+//0110 0100 bitwise op : 0110 shift left by 4 : 0110 0000\
+\
+//add together: 0110 \
+\
+\
+{\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/1192487/swap-bits-in-a-number-in-c"}}{\fldrslt https://stackoverflow.com/questions/1192487/swap-bits-in-a-number-in-c}}\
+\
+{\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Bitwise_operations_in_C"}}{\fldrslt https://en.wikipedia.org/wiki/Bitwise_operations_in_C}}}
