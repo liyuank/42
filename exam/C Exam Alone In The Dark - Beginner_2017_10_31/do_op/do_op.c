@@ -42,6 +42,10 @@ int   main(int argc, char **argv)
   {
     printf("%d\n", (nb / nb2));
   }
+  else if ((argv[2][0]) == 37)
+  {
+    printf("%d\n", (nb % nb2));
+  }
   else
     return (0);
 }
