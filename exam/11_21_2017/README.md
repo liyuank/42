@@ -7,6 +7,7 @@ Final grade: 27/100
 Assignments:
 
   Level 2:
+  
     3: union for 1 potential points (Current)
     2: ft_strrev for 6 potential points (Failure)
     1: is_power_of_2 for 11 potential points (Failure)
